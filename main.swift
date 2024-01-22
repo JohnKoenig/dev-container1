@@ -1,6 +1,4 @@
-let a = 10
-let b = 77
-let c: Int = a+b
+let myInt = Int.random(in: 1...100)
 
 enum Status {
     case even
@@ -8,13 +6,13 @@ enum Status {
 }
 
 func checkEvenOrOdd(sum: Int) -> Status {
-    if c.isMultiple(of: 2) {
+    if myInt.isMultiple(of: 2) {
         return .even
     } else {
         return Status.odd
     }
 }
 
-let result = checkEvenOrOdd(sum: c)
+let result = checkEvenOrOdd(sum: myInt)
 
-print("The sum of a and b is \(c) and it is \(result).")
+print("The integer \(myInt) is \(result).")
